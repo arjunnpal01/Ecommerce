@@ -6,15 +6,15 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
    
   return (
-    <nav className="bg-white border-b border-gray-200 shadow-sm">
+    <nav  className="bg-white border-b border-gray-200 shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16 items-center">
           {/* Left side (unchanged) */}
           <div className="flex items-center space-x-8">
             <Link to="/" className="text-xl font-semibold text-gray-700">Navbar</Link>
-            <Link to="/home" className="mx-4 text-gray-700 hover:text-green-800 text-sm font-medium">Home</Link>
-            <Link to="/categories"  className="text-gray-700 hover:text-green-800 text-sm font-medium">Categories</Link>
-            <Link to="/offers" className="text-gray-700 hover:text-green-800 text-sm font-medium">Offers</Link>
+            <Link to="/" className="mx-4 text-gray-700 hover:text-green-800 text-sm font-medium">Home</Link>
+            <Link to="/"  className="text-gray-700 hover:text-green-800 text-sm font-medium">Categories</Link>
+            <Link to="/" className="text-gray-700 hover:text-green-800 text-sm font-medium">Offers</Link>
             
             <div className="hidden md:flex ml-4">
               <input
@@ -33,10 +33,11 @@ const Navbar = () => {
 
           {/* ✅ Right Side - Icons instead of text buttons */}
           <div className="hidden md:flex items-center space-x-4 text-gray-700 text-lg">
-            <button className="flex items-center hover:text-green-800 transition">
+            <Link to="/login" className="flex items-center hover:text-green-800 transition">
               <FaUser className="mr-2" />
               <span className="text-sm">Login</span>
-            </button>
+            </Link>
+
             <button className="flex items-center hover:text-green-800 transition">
               <FaHeart className="mr-2" />
               <span className="text-sm">Wishlist</span>
